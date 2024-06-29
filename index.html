@@ -5,102 +5,97 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <title>Meu Portfólio</title>
                 <link rel="stylesheet" href="assets/css/stl.css">
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         </head>
 
 
     <body>
 
-        <div class="navBar">
-            <div class="nav1">
-                <img id="mypic" src="images/my.png">
-                <h1>Rafael Queiroz</h1>
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top py-3" id="barranav">
+            <div class="container-fluid">
+                <h2>Rafael Queiroz</h2>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MenuItems" id="buttonMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="MenuItems">
+                        <div class="navbar-nav ms-auto">
+                            <a href="#container" class="nav-link">INÍCIO</a>
+                            <a href="#container3" class="nav-link">SOBRE MIM</a>
+                            <a href="#habilidades" class="nav-link">HABILIDADES</a>
+                            <a href="#" class="nav-link">PROJETOS</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">REDES
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a href="https://github.com/queirozzrafael" class="dropdown-item">Github</a></li>
+                                    <li><a href="https://www.linkedin.com/in/rafael-queiroz-33288b235/" class="dropdown-item">LinkedIn</a></li>
+                                    <li><a href="mailto:rafael.queirozvieira@gmail.com" class="dropdown-item">Email</a></li>
+                                    <li><a href="https://www.instagram.com/queirozrfl" class="dropdown-item">Instagram</a></li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
             </div>
+        </nav>
 
-            <div class="nav2">
-                <ul class="ttls">
-                    <a href="#container"><li>INÍCIO</li></a>
-                    <a href="#container3"><li>SOBRE MIM</li></a>
-                    <a href="#container5"><li>HABILIDADES</li></a>
-                    <a href="#container7"><li>PROJETOS</li></a>
-                </ul>
+        <div class="container mt-5 animate__animated animate__fadeIn" id="container">
+                <h1>Bem-vindo ao meu site de portfólio!</h1>
+                <h2>Saudações e boas-vindas! É com grande alegria que o recebo neste espaço dedicado à expressão do meu mundo criativo. 
+                    Aqui, abro as portas para compartilhar não apenas meu trabalho, mas também apresento 
+                    a você um pouco mais sobre mim, minhas paixões, habilidades e os frutos de minha imaginação.</h2>
+        </div>
+    
+        <div class="container mt-5 animate__animated animate__fadeIn" id="container3">
+                <h1>Sobre mim</h1>
+                <h2>Me chamo Rafael Queiroz, nasci na cidade de Curitiba - PR no ano de 2005 e atualmente resido na mesma cidade.
+                    Desde pequeno tenho uma certa familiaridade com a tecnologia, por mais que eu não saiba e não conheça tudo, eu me sinto a vontade para trabalhar e me divertir com tecnologias diversas e aprender mais.
+                </h2>
+        </div>
+    
+        <div class="container mt-5 animate__animated animate__fadeIn" id="habilidades">
+            <h2 class="text-center w-100">HABILIDADES</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="inner-container">
+                        <h5>HTML</h5>
+                        <p>É a linguagem de marcação usada para criar e estruturar o conteúdo de uma página da web. Ele define os elementos que compõem a página, como parágrafos, cabeçalhos, links e imagens.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="inner-container">
+                        <h5>CSS</h5>
+                        <p>É uma linguagem de estilo usada para definir a apresentação e o layout de uma página da web escrita em HTML. Com CSS, você pode controlar aspectos visuais como cor, fonte, tamanho e posicionamento de elementos HTML.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="inner-container">
+                        <h5>C</h5>
+                        <p>É uma linguagem de programação de propósito geral amplamente usada. Criada nos anos 70, ela é conhecida por sua eficiência e portabilidade, sendo utilizada em uma variedade de aplicações, desde sistemas operacionais até software de aplicativos. É uma linguagem de programação de baixo nível, o que significa que oferece um alto nível de controle sobre o hardware do computador, mas requer mais detalhes em seu código.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="inner-container">
+                        <h5>JavaScript</h5>
+                        <p>É uma linguagem de programação de alto nível que adiciona interatividade e dinamismo às páginas da web. JavaScript é frequentemente usado para criar funcionalidades como validação de formulários, animações, manipulação do DOM e interações com o usuário.</p>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="container mt-5 animate__animated animate__fadeIn">
+            <h1 class="text-center">Projetos</h1>
+            <div class="container mt-5 animate__animated animate__fadeIn" id="repositorios">
+                <h2 class="text-center">Repositórios do GitHub</h2>
+                <div class="row" id="repoList">
+                    <!-- Repositórios serão inseridos aqui -->
+                </div>
+            </div>
+
+        </div>
         
-                <div class="exterLinks">
-                    <a href=https://github.com/queirozzrafael>
-                        <img class="nets" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1200px-GitHub_Invertocat_Logo.svg.png">
-                    </a>
-                        <a href="mailto:rafael.queirozvieira@gmail.com">
-                            <img class="nets" src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png">
-                        </a>
-                            <a href="https://www.linkedin.com/in/rafael-queiroz-33288b235/">
-                                <img class="nets" src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png">
-                            </a>
-                                <a href="https://www.instagram.com/queirozrfl">
-                                    <img class="nets" src="https://freepngimg.com/thumb/logo/77364-instagram-icons-computer-black-logo-white-wine.png">
-                            </a>
-
-
-                 </div>
-
-
-                 <div id="container">
-                    <div id="container2">
-                        <h1>Bem-vindo ao meu site de portfólio!</h1>
-                        <h2>Saudações e boas-vindas! É com grande alegria que o recebo neste espaço dedicado à expressão do meu mundo criativo. 
-                            Aqui, abro as portas para compartilhar não apenas meu trabalho, mas também apresento 
-                            a você um pouco mais sobre mim, minhas paixões, habilidades e os frutos de minha imaginação.</h2>
-                    </div>
-
-                 </div>
-
-                    <div id="container3">
-                        <div id="container4">
-                            <h1>Sobre mim</h1>
-                                <h2>Me chamo Rafael Queiroz, nasci na cidade de Curitiba - PR no ano de 2005 e atualmente resido na mesma cidade.
-                                    Desde pequeno tenho uma certa familiaridade com a tecnologia, por mais que eu não saiba e não conheça tudo, eu me sinto a vontade para trabalhar e me divertir com tecnologias diversas e aprender mais.
-                                </h2>
-
-                        </div>
-
-                    </div>
-                    <h1>Minhas Habilidades</h1>
-                    <div id="container5">
-                        <div id="container6">
-                            <img class="iskills" src="https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/html5-512.png">
-                                <h3> É a linguagem de marcação usada para criar e estruturar o conteúdo de uma página da web. Ele define os elementos que compõem a página, como parágrafos, cabeçalhos, links e imagens.</h3>
-                        </div>
-                        <div id="container6">
-                            <img class="iskills" src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png">
-                                <h3>É uma linguagem de estilo usada para definir a apresentação e o layout de uma página da web escrita em HTML. Com CSS, você pode controlar aspectos visuais como cor, fonte, tamanho e posicionamento de elementos HTML.</h3>
-                        </div>
-                        <div id="container6">
-                            <img class="iskills" src="https://khandeshiit.com/assets1/img/cc.png">
-                                <h3>É uma linguagem de programação de propósito geral amplamente usada. Criada nos anos 70, ela é conhecida por sua eficiência e portabilidade, sendo utilizada em uma variedade de aplicações, desde sistemas operacionais até software de aplicativos. É uma linguagem de programação de baixo nível, o que significa que oferece um alto nível de controle sobre o hardware do computador, mas requer mais detalhes em seu código.</h3>
-                        </div>
-                        <div id="container6">
-                            <img class="iskills" src="https://static.vecteezy.com/system/resources/previews/027/127/463/original/javascript-logo-javascript-icon-transparent-free-png.png">
-                                <h3>É uma linguagem de programação de alto nível que adiciona interatividade e dinamismo às páginas da web. JavaScript é frequentemente usado para criar funcionalidades como validação de formulários, animações, manipulação do DOM e interações com o usuário.</h3>
-                        </div>
-                    </div>
-
-                    <h1>Projetos</h1>
-                        <div id="container7">
-                            
-                           <a href="https://github.com/queirozzrafael/ToDoList_front"><div id="container8"><h2>To do list</h2></div></a> 
-                           <a href="https://github.com/queirozzrafael/project_GestaoNotas"><div id="container8"><h2>Gestao de Notas</h2></div></a> 
-                           <a href=""><div id="container8"><h2>?????</h2></div></a> 
-                        </div>
-
-
-
-
-
-
-
-
-
-
+        <footer class="p-4 text-center navbar-dark" id="rodapeFin">
+            Rafael Queiroz 2024
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script src="assets/js/app.js"></script>
     </body>
-</html>
+    </html>
